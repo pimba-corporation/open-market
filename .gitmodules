@@ -1,0 +1,9 @@
+[submodule "open_market_movil/lib/src/submodulos/submodulo-internacionalizacion-movil"]
+	path = open_market_movil/lib/src/submodulos/submodulo-internacionalizacion-movil
+	url = https://github.com/pimba-corporation/submodulo-internacionalizacion-movil
+[submodule "open_market_movil/lib/src/submodulos/submodulo-auth0-movil"]
+	path = open_market_movil/lib/src/submodulos/submodulo-auth0-movil
+	url = https://github.com/pimba-corporation/submodulo-auth0-movil
+[submodule "open_market_movil/lib/src/submodulos/submodulo-articulos-movil"]
+	path = open_market_movil/lib/src/submodulos/submodulo-articulos-movil
+	url = https://github.com/pimba-corporation/submodulo-articulos-movil
