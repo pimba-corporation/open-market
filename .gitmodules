@@ -4,6 +4,3 @@
 [submodule "lib/src/submodulos/submodulo-internacionalizacion-movil"]
 	path = lib/src/submodulos/submodulo-internacionalizacion-movil
 	url = https://github.com/pimba-corporation/submodulo-internacionalizacion-movil
-[submodule "lib/src/submodulos/submodulo-articulos-movil"]
-	path = lib/src/submodulos/submodulo-articulos-movil
-	url = https://github.com/pimba-corporation/submodulo-articulos-movil
