@@ -1,3 +1,11 @@
 {
-  "bienvenida": "Hello, welcome to the app"
+  "bienvenida": "Hello, welcome to the app",
+  "mensajeInicio": "Welcome to the community market",
+  "mensajes": {
+    "mensajeInicio": "Welcome",
+    "mensajesError": {
+      "errorConsulta": "Error on fetch data",
+      "errorInternet": "Not internet conection"
+    }
+  }
 }

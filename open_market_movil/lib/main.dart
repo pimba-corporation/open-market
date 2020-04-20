@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:open_market_movil/src/constantes/nombres-submodulos.dart';
+import 'package:open_market_movil/src/pantallas/inicio.dart';
 import 'package:open_market_movil/src/submodulos/submodulo-internacionalizacion-movil/app_locations.dart';
 
 void main() => runApp(MyApp());
@@ -19,13 +20,11 @@ class MyApp extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      title: 'Flutter Demo',
+      title: 'Open Market',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(
-        title: 'Titulo',
-      ),
+      home: InicioPantalla(),
     );
   }
 }
