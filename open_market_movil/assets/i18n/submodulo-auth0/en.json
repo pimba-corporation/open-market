@@ -1,3 +1,9 @@
 {
-  "hola": "hello"
+  "hola": "hello",
+  "drawner": {
+    "opciones": {
+      "perfil": "Watch my Profile",
+      "acerca": "About.."
+    }
+  }
 }

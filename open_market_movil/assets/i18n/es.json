@@ -7,5 +7,13 @@
       "errorConsulta": "Error consultado datos",
       "errorInternet": "No hay conexion a internet"
     }
+  },
+  "appBar": {
+    "acciones": {
+      "menuLenguaje": {
+        "en": "Ingles",
+        "es": "Español"
+      }
+    }
   }
 }

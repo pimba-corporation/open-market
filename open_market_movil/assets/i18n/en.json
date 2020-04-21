@@ -7,5 +7,13 @@
       "errorConsulta": "Error on fetch data",
       "errorInternet": "Not internet conection"
     }
+  },
+  "appBar": {
+    "acciones": {
+      "menuLenguaje": {
+        "en": "English",
+        "es": "Spain"
+      }
+    }
   }
 }

@@ -1,3 +1,9 @@
 {
-  "hola": "hola"
+  "hola": "hola",
+  "drawner": {
+    "opciones": {
+      "perfil": "Ver mi Perfil",
+      "acerca": "Acerca.."
+    }
+  }
 }
