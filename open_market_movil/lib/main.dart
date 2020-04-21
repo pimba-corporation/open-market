@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:open_market_movil/src/constantes/nombres-submodulos.dart';
 import 'package:open_market_movil/src/pantallas/inicio.dart';
+import 'package:open_market_movil/src/submodulos/submodulo-auth0-movil/repositorios/almacenamiento_local_repositorio.dart';
 import 'package:open_market_movil/src/submodulos/submodulo-internacionalizacion-movil/app_locations.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  AlmacenamientoLocalRepositorio almacenamientoLocal = AlmacenamientoLocalRepositorio();
+  await almacenamientoLocal.recuperarLenguajeDelSistema();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -62,7 +67,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .display1,
             ),
           ],
         ),
