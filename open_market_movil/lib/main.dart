@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:open_market_movil/src/app.dart';
 import 'package:open_market_movil/src/submodulos/submodulo-auth0-movil/blocs/auth_bloc/auth_bloc.dart';
 import 'package:open_market_movil/src/submodulos/submodulo-auth0-movil/blocs/preferencias_bloc/preferencias_bloc.dart';
-import 'package:open_market_movil/src/submodulos/submodulo-auth0-movil/repositorios/almacenamiento_local_repositorio.dart';
+import 'package:open_market_movil/src/submodulos/submodulo-auth0-movil/repositorios/local/almacenamiento_local_repositorio.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -2,6 +2,7 @@
   "hola": "hello",
   "drawner": {
     "opciones": {
+      "modoOscuro": "Dark Mode",
       "perfil": "Watch my Profile",
       "acerca": "About.."
     }
