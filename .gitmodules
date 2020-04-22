@@ -7,3 +7,6 @@
 [submodule "open_market_movil/lib/src/submodulos/submodulo-articulos-movil"]
 	path = open_market_movil/lib/src/submodulos/submodulo-articulos-movil
 	url = https://github.com/pimba-corporation/submodulo-articulos-movil
+[submodule "open_market_movil/lib/src/submodulos/submodulo-comun-movil"]
+	path = open_market_movil/lib/src/submodulos/submodulo-comun-movil
+	url = https://github.com/pimba-corporation/submodulo-comun-movil

@@ -5,7 +5,6 @@ import 'package:open_market_movil/src/pantallas/inicio.dart';
 import 'package:open_market_movil/src/submodulos/submodulo-auth0-movil/blocs/preferencias_bloc/preferencias_bloc.dart';
 import 'package:open_market_movil/src/submodulos/submodulo-auth0-movil/blocs/preferencias_bloc/preferencias_state.dart';
 import 'package:open_market_movil/src/submodulos/submodulo-internacionalizacion-movil/app_locations.dart';
-
 import 'constantes/nombres-submodulos.dart';
 
 class App extends StatelessWidget {
