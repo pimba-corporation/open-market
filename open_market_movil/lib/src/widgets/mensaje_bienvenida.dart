@@ -8,8 +8,8 @@ class MensajeBienvenida extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Card(
-        color: Colors.black,
+      child: Container(
+        margin: EdgeInsets.only(left: 10, right: 10),
         child: Column(
           children: <Widget>[
             SizedBox(
@@ -27,30 +27,37 @@ class MensajeBienvenida extends StatelessWidget {
                     left: 0,
                     right: 0,
                     child: new Container(
+                      padding: EdgeInsets.all(5),
+                      child: FittedBox(
+                        fit: BoxFit.fill,
+                        child: Text(
+                          mensaje,
+                          style: Theme.of(context).textTheme.headline.copyWith(
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ),
                       decoration: BoxDecoration(
-                        color: Colors.grey[700].withOpacity(0.5), // opacidad
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(5.0),
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black54,
+                            blurRadius: 7.0, // has the effect of softening the shadow
+                            spreadRadius: 1.0, // has the effect of extending the shadow
+                            offset: Offset(
+                              0, // horizontal
+                              5.0, // vertical
+                            ),
+                          )
+                        ],
+                        color: Colors.white.withOpacity(1), // opacidad
                       ),
                       constraints: BoxConstraints(
-                        minHeight: 55,
+                        maxHeight: 100,
                       ),
                     ),
-                  ),
-                  Positioned(
-                    bottom: 16.0,
-                    left: 16.0,
-                    right: 16.0,
-                    child: FittedBox(
-                        fit: BoxFit.scaleDown,
-                        alignment: Alignment.centerLeft,
-                        child: Container(
-                          child: Text(
-                            mensaje,
-                            style:
-                                Theme.of(context).textTheme.headline.copyWith(
-                                      color: Colors.white,
-                                    ),
-                          ),
-                        )),
                   ),
                 ],
               ),
