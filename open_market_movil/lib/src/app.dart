@@ -8,26 +8,7 @@ import 'package:open_market_movil/src/submodulos/submodulo-internacionalizacion-
 import 'constantes/nombres-submodulos.dart';
 
 class App extends StatelessWidget {
-  // This widget is the root of your application.
-  Locale idioma = Locale('es', 'EC');
-  Brightness tema = Brightness.light;
-
-  Locale escucharIdioma(PreferenciasState estado) {
-    if (estado is IdiomaCambiado) {
-      this.idioma = estado.locale;
-    }
-    return this.idioma;
-    // return
-    // return const Locale('es', 'EC');
-  }
-
-  Brightness escucharTema(PreferenciasState estado) {
-    if (estado is TemaCambiado) {
-      this.tema = estado.temaColor;
-    }
-    return this.tema;
-  }
-
+  // Este widget es la raiz de la aplicacion.
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<PreferenciasBloc, PreferenciasState>(
@@ -37,7 +18,7 @@ class App extends StatelessWidget {
             const Locale('es', 'EC'),
             const Locale('en', 'US'),
           ],
-          locale: this.escucharIdioma(estado),
+          locale: estado.idioma,
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
@@ -46,7 +27,7 @@ class App extends StatelessWidget {
           title: 'Open Market',
           theme: ThemeData(
             primarySwatch: Colors.blue,
-            brightness: this.escucharTema(estado),
+            brightness: estado.tema,
           ),
           home: InicioPantalla(),
         );
